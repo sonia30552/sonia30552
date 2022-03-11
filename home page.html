@@ -1,0 +1,168 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+tabel ,th,tr{
+  border: 1px solid black;
+}
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 28;
+  background-color: orange;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+<body>
+
+<div class="split left">
+<h1 style="Background-color:red;">Guru Bank</h1>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="file:///C:/Users/dasso/Downloads/customer%20bank.html">New Customer</a>
+  <a href="#">Edit Customer</a>
+  <a href="#">Delete Customer</a>
+  <a href="#">New  Account</a>
+
+  <a href="#">Delete Account</a>
+  <a href="#">Deposite</a>
+  <a href="#">Withdrawal</a>
+
+  <a href="#">Fund Transfer</a>
+  <a href="#">Change  Password</a>
+  <a href="#">Balance Enquiry</a>
+
+  <a href="#">Mini Satement</a>
+  <a href="#">Customised Statement</a>
+  <a href="#">Log out</a>
+
+
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Manager</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+ 
+  
+
+
+<div class="split right">
+  <div class="centered">
+    <table>
+  <tr>
+    <th color =" solid black">Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+    
+
+
+  </div>
+</div>
+     
+
+</body>
+</html>
